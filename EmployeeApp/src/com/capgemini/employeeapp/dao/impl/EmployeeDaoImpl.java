@@ -11,27 +11,35 @@ public class EmployeeDaoImpl implements EmployeeDeo {
 	
 @Override
 public List<Employee> findAllEmployees() {
-	// TODO Auto-generated method stub
-	return null;
+	
+	return employees;
 }
 @Override
 public Employee findEmployeeById(int employeeId) {
-	// TODO Auto-generated method stub
+	
 	return null;
 }
 @Override
 public boolean deleteEmployee(int employeeid) {
-	// TODO Auto-generated method stub
+	for(Employee employee:employees)
+	{
+		if(employee.getEmployeeid()==employeeid)
+		{
+			employees.remove(employee);
+			return true;
+		}
+	}
 	return false;
 }
 @Override
 public boolean addEmployee(Employee employee) {
-	// TODO Auto-generated method stub
-	return false;
+	
+	
+	return employees.add(employee);
 }
 @Override
 public Employee updateEmployee(Employee employee) {
-	// TODO Auto-generated method stub
+	
 	return null;
 }
 
