@@ -10,16 +10,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class HelloWorldServlet
- */
+
 @WebServlet("/hello")
 public class HelloWorldServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
+   
     public HelloWorldServlet() {
         super();
         // TODO Auto-generated constructor stub
@@ -32,9 +28,7 @@ public class HelloWorldServlet extends HttpServlet {
     	System.out.println("init() method is called");
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	System.out.println("doGet() is called.");
 		response.setContentType("text/html");

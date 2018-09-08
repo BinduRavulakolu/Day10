@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>New Employee Page</title>
 </head>
-<body bgcolor="cyan">
+<body bgcolor="aqua">
 <h1>Add new Employee</h1>
 <hr>
 <form action="addEmployee" method="post">
